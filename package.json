@@ -1,19 +1,20 @@
 {
-  "name": "generator-ny",
+  "name": "dada",
   "version": "0.0.0",
   "description": "前端自动化工程",
-  "homepage": "https://github.com/fromIRIS/generator-ny.git",
+  "homepage": "https://github.com/fromIRIS/dada",
   "author": {
     "name": "南洋",
     "email": "417611525@qq.com",
     "url": "lvdada.org"
   },
-  "files": [
-    "generators"
-  ],
-  "main": "generators/index.js",
+  "bin": {
+    "dada": "bin/dada.js"
+  },
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "dada",
+    "component"
   ],
   "dependencies": {
     "yeoman-generator": "^0.21.1",
@@ -23,13 +24,53 @@
   "devDependencies": {
     "yeoman-assert": "^2.0.0",
     "eslint-config-xo-space": "^0.7.0",
+    "gulp-nsp": "^2.1.0",
+    "async": "^1.5.0",
+    "bluebird": "~1.1.0",
+    "chalk": "^1.1.1",
+    "cli-color": "^1.0.0",
+    "commander": "^2.8.1",
+    "del": "^2.2.0",
+    "easy-table": "~0.3.0",
+    "gulp-util": "^3.0.7",
+    "imports-loader": "^0.6.5",
+    "jshint": "^2.8.0",
+    "less-loader": "^2.2.2",
+    "lodash": "2.4.1",
+    "mkdirp": "~0.3.5",
+    "my-gulp-webpack": "^0.0.1",
+    "my-webpack": "^0.0.1",
+    "npmlog": "0.0.6",
+    "postcss": "^5.0.14",
+    "q": "1.4.1",
+    "request": "^2.67.0",
+    "shelljs": "^0.5.3",
+    "style-loader": "^0.13.0",
+    "through2": "^2.0.0",
+    "yeoman-assert": "^2.0.0",
+    "yeoman-environment": "^1.3.0",
+    "yeoman-generator": "^0.21.1",
     "gulp": "^3.9.0",
-    "gulp-eslint": "^1.0.0",
-    "gulp-exclude-gitignore": "^1.0.0",
-    "gulp-istanbul": "^0.10.3",
-    "gulp-mocha": "^2.0.0",
-    "gulp-plumber": "^1.0.0",
-    "gulp-nsp": "^2.1.0"
+    "browser-sync": "^2.10.0",
+    "gulp-cache": "^0.4.1",
+    "gulp-concat": "^2.5.2",
+    "gulp-copy": "0.0.2",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-less": "^3.0.5",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-image-resize": "^0.7.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^0.6.6",
+    "gulp-rename": "^1.2.0",
+    "gulp-sftp": "^0.1.4",
+    "gulp-spriter": "^1.1.5",
+    "gulp-tinypng": "^1.0.2",
+    "gulp-uglify": "^1.1.0",
+    "gulp-zip": "^2.0.3",
+    "imagemin-pngquant": "^4.0.0",
+    "minimist": "^1.2.0",
+    "path": "^0.12.7"
   },
   "eslintConfig": {
     "extends": "xo-space",
@@ -37,10 +78,6 @@
       "mocha": true
     }
   },
-  "repository": "git@github.com:fromIRIS/generator-ny.git",
-  "scripts": {
-    "prepublish": "gulp prepublish",
-    "test": "gulp"
-  },
+  "repository": "https://github.com/fromIRIS/dada.git",
   "license": "MIT"
 }
